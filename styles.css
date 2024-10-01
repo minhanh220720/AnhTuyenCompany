@@ -256,3 +256,46 @@ button:hover {
 .active, .dot:hover {
     background-color: #717171;
 }
+
+.contact-details {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    color: white;
+	font-weight: 200;
+}
+
+.contact-details {
+	font-style: oblique;
+	font-family: sans-serif; 
+	}
+
+#cate ul li a {
+	Border: 1px solid yellow;
+}
+/* Nếu muốn tăng thêm phần phong cách */
+.contact-details p strong {
+    color: white; /* Màu khác cho từ "Hotline" và "Email" để làm nổi bật */
+	font-weight: 200;
+}
+
+
+.contact-details p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa icon và văn bản */
+}
+
+.contact-details i {
+    margin-right: 10px;
+    color: #ff4b2b;
+    font-size: 20px;
+}
+
+.contact-details p strong {
+    color: #ff4b2b;
+}
