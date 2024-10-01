@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border: 2px solid #fff; /* Border màu trắng xuất hiện khi hover */
+    border: 2px solid #99CC66; /* Border màu trắng xuất hiện khi hover */
     background-color: rgba(255, 255, 255, 0.1); /* Thêm chút nền mờ khi hover */
 }
 
@@ -254,12 +254,12 @@ button:hover {
 }
 
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #99CC66;
 }
 
 .contact-details {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: -20px;
 }
 
 .contact-details p {
@@ -275,6 +275,8 @@ button:hover {
 
 #cate ul li a {
 	Border: 1px solid yellow;
+	
+	
 }
 /* Nếu muốn tăng thêm phần phong cách */
 .contact-details p strong {
