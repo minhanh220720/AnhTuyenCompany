@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent; /* Bắt đầu với border trong suốt */
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    border: 2px solid #fff; /* Border màu trắng xuất hiện khi hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Thêm chút nền mờ khi hover */
+}
+
+
+#hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.service {
+    background: #f4f4f4;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+.logo {
+    display: block;
+    margin: 0 auto 10px auto; /* Canh giữa và thêm khoảng cách phía dưới */
+    max-width: 150px; /* Kích thước tối đa của logo */
+    height: auto; /* Giữ tỉ lệ chiều cao của logo */
+}
+
+
+#contact {
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    border: 1px solid #ddd; /* Đường viền mảnh */
+    border-radius: 10px; /* Bo góc khung */
+    padding: 20px; /* Khoảng cách giữa nội dung và viền khung */
+    max-width: 600px; /* Giới hạn chiều rộng */
+    margin: 30px auto; /* Canh giữa phần liên hệ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+#contact h2 {
+    text-align: center; /* Canh giữa tiêu đề */
+}
+
+#contactForm label {
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contactForm button:hover {
+    background-color: #218838;
+}
+
+
+.zalo-icon {
+    position: fixed;
+    bottom: 20px; /* Khoảng cách từ đáy trang */
+    right: 20px;  /* Khoảng cách từ phải trang */
+    z-index: 1000; /* Đảm bảo icon nằm trên cùng */
+}
+
+.zalo-icon img {
+    width: 70px;  /* Kích thước hình ảnh */
+    height: 50px;
+    border-radius: 70%; /* Tạo bo tròn cho icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng cho icon */
+    transition: transform 0.3s ease; /* Thêm hiệu ứng khi hover */
+	animation: blink 1.5s infinite;
+}
+
+.zalo-icon img:hover {
+    transform: scale(1.1); /* Phóng to icon khi hover */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Ở trạng thái bình thường */
+        transform: scale(1); /* Kích thước bình thường */
+    }
+    50% {
+        opacity: 0.5; /* Nhấp nháy bằng cách làm mờ */
+        transform: scale(1.1); /* Phóng to nhẹ */
+    }
