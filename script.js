@@ -7,3 +7,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     alert('Cảm ơn bạn đã gửi tin nhắn! Chúng tôi sẽ liên hệ với bạn sớm nhất.');
     this.reset();
 });
+
+
+

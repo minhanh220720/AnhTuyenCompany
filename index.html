@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>DNTN XÂY DỰNG TỔNG HỢP ANH TUYỀN</title>
+	
+	
 </head>
 <body>
     <header>
@@ -21,11 +23,31 @@
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>Giải pháp tin cậy cho xây dựng, vận tải</h2>
-        <p>Chúng tôi cung cấp dịch vụ vận chuyển vật liệu xây dựng nhanh chóng và hiệu quả.</p>
-        <button id="contactBtn">Liên Hệ Ngay</button>
-    </section>
+   <section id="hero">
+    <div class="slider-container">
+        <div class="slide fade">
+            <img src="./img/img1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+            <img src="./img/img2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+            <img src="./img/img3.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+
+   
+	
+	 <!-- Chấm tròn đại diện cho các slide -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+	
+	
+</section>
 
     <section id="services">
         <h2>Dịch Vụ Của Chúng Tôi</h2>
@@ -74,7 +96,79 @@
 
     <script src="script.js"></script>
 	
+	<script>
 	
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Điều khiển cho nút "prev" và "next"
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Hiển thị các slide
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex - 1].style.display = "block";  
+}
+
+// Tự động chuyển slide sau mỗi 3 giây
+setInterval(function() {
+    plusSlides(1);
+}, 3000);
+</script>
+
+
+
+<script>
+
+let slideIndex1 = 1;
+showSlides(slideIndex1);
+
+// Điều khiển cho nút "prev" và "next"
+function plusSlides(n) {
+    showSlides(slideIndex1 += n);
+}
+
+// Điều khiển chuyển sang slide hiện tại khi nhấn vào chấm tròn
+function currentSlide(n) {
+    showSlides(slideIndex1 = n);
+}
+
+// Hiển thị các slide và cập nhật trạng thái của các chấm tròn
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    
+    if (n > slides.length) { slideIndex1 = 1 }
+    if (n < 1) { slideIndex1 = slides.length }
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+    slides[slideIndex1 - 1].style.display = "block";  
+    dots[slideIndex1 - 1].className += " active"; // Đánh dấu chấm tròn hiện tại
+}
+
+// Tự động chuyển slide sau mỗi 3 giây
+setInterval(function() {
+    plusSlides(1);
+}, 3000);
+</script>
+
+
 	
 </body>
 </html>
