@@ -6,10 +6,32 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+  
+  color: #000022;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 334px;
+  z-index: 1;
+	
+	
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Điều chỉnh độ mờ */
+  z-index: -1; /* Để lớp nền nằm dưới nội dung */
 }
 
 nav ul {
@@ -23,12 +45,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+	background-color: #000022;
 }
 
 nav ul li a {
-    color: #fff;
+    
     text-decoration: none;
     padding: 5px 10px;
     transition: all 0.3s ease-in-out;
@@ -264,8 +287,8 @@ button:hover {
 
 .contact-details p {
     margin: 5px 0;
-    color: white;
-	font-weight: 200;
+	font-weight: 1000;
+	color: #000022;
 }
 
 .contact-details {
@@ -278,11 +301,6 @@ button:hover {
 	
 	
 }
-/* Nếu muốn tăng thêm phần phong cách */
-.contact-details p strong {
-    color: white; /* Màu khác cho từ "Hotline" và "Email" để làm nổi bật */
-	font-weight: 200;
-}
 
 
 .contact-details p {
@@ -294,10 +312,10 @@ button:hover {
 
 .contact-details i {
     margin-right: 10px;
-    color: #ff4b2b;
+    color: #FFFF00;
     font-size: 20px;
 }
 
 .contact-details p strong {
-    color: #ff4b2b;
+    color: #FFFF00;
 }
